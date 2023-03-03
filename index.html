@@ -40,7 +40,10 @@
 
         <div class="flyo-container container-two">
           <div class="flyo-content__text">
-            <p>You’ve used 815 GB of your storage</p>
+            <p class="fw-400">
+              You’ve used <span class="fw-700" id="output">815</span> GB of your
+              storage
+            </p>
 
             <p class="text-absolute">
               <span class="gb-left">185</span> GB Left
@@ -48,11 +51,11 @@
           </div>
           <form>
             <label for="range" hidden>Range</label>
-            <input type="range" id="range" min="0" max="1000" />
+            <input type="range" id="range" min="0" max="1000" value="815" />
           </form>
           <div class="flyo-content__text">
-            <p>0 GB</p>
-            <p>1000 GB</p>
+            <p class="fw-700"><span id="output">815</span> GB</p>
+            <p class="fw-700">1000 GB</p>
           </div>
         </div>
       </div>
@@ -66,5 +69,7 @@
         >. Coded by <a href="#">Your Name Here</a>.
       </div>
     </footer>
+
+    <script src="./js/script.js"></script>
   </body>
 </html>

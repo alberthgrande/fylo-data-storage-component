@@ -1,5 +1,8 @@
 :root {
-  --primary-Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+  --primary-gradient: linear-gradient(
+    130deg,
+    hsl(6, 100%, 80%) hsl(335, 100%, 65%)
+  );
   --neutral-pale-blue: hsl(243, 100%, 93%);
   --neutral-grayish-blue: hsl(229, 7%, 55%);
   --neutral-dark-blue: hsl(228, 56%, 26%);
@@ -29,6 +32,7 @@ body {
 
   font-family: var(--font-family);
   font-size: var(--font-size);
+  font-weight: var(--fw-400);
 }
 
 .container {
@@ -52,22 +56,69 @@ body {
 .container-one {
   border-radius: 0.5rem 4rem 0.5rem 0.5rem;
 }
+.container-one {
+  width: 30%;
+}
 .container-two {
   width: 40%;
 }
 input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
   margin: 0.5rem 0;
   width: 100%;
+  border-radius: 50px;
+  background: var(--neutral-very-dark-blue);
+  overflow: hidden;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: var(--neutral-pale-blue);
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: -407px 0 0 400px hsl(335, 100%, 65%);
 }
 .flyo-content__text {
   display: flex;
   justify-content: space-between;
 }
-
+.text-absolute {
+  font-weight: var(--fw-700);
+  color: var(--neutral-grayish-blue);
+}
 .gb-left {
   color: var(--neutral-very-dark-blue);
   font-size: 2rem;
 }
+
+.fw-400 {
+  font-weight: var(--fw-400);
+  color: var(--neutral-pale-blue);
+}
+.fw-700 {
+  font-weight: var(--fw-700);
+  color: var(--neutral-grayish-blue);
+}
+
+.option-menu {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.option-menu img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--neutral-very-dark-blue);
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+}
+
 /* footer */
 .attribution {
   display: none;
