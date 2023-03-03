@@ -1,0 +1,64 @@
+:root {
+  --primary-Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+  --neutral-pale-blue: hsl(243, 100%, 93%);
+  --neutral-grayish-blue: hsl(229, 7%, 55%);
+  --neutral-dark-blue: hsl(228, 56%, 26%);
+  --neutral-very-dark-blue: hsl(229, 57%, 11%);
+
+  --font-size: 14px;
+  --font-family: "Raleway", sans-serif;
+  --fw-400: 400;
+  --fw-700: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--neutral-very-dark-blue);
+  background-image: url(../images/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-position: bottom 0px left 0px;
+  min-height: 100vh;
+
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+
+  /* position */
+  display: grid;
+  place-content: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: end;
+  gap: 1rem;
+}
+
+.flyo-container {
+  background: var(--neutral-dark-blue);
+  padding: 2rem;
+}
+input[type="range"] {
+  width: 100%;
+}
+.flyo-content__text {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
