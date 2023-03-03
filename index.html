@@ -22,11 +22,12 @@
     />
     <!-- css link -->
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
     <main>
       <div class="container">
-        <div class="flyo-container">
+        <div class="flyo-container container-one">
           <div>
             <img src="./images/logo.svg" alt="" />
           </div>
@@ -37,11 +38,13 @@
           </div>
         </div>
 
-        <div class="flyo-container">
+        <div class="flyo-container container-two">
           <div class="flyo-content__text">
             <p>You’ve used 815 GB of your storage</p>
 
-            <p>185 GB Left</p>
+            <p class="text-absolute">
+              <span class="gb-left">185</span> GB Left
+            </p>
           </div>
           <form>
             <label for="range" hidden>Range</label>
